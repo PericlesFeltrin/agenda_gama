@@ -1,15 +1,6 @@
-//
-//  Meal.swift
-//  FoodTracker
-//
-//  Created by Jane Appleseed on 5/26/15.
-//  Copyright © 2015 Apple Inc. All rights reserved.
-//  See LICENSE.txt for this sample’s licensing information.
-//
-
 import UIKit
 
-class Meal: NSObject, NSCoding {
+class Contato: NSObject, NSCoding {
     // MARK: Properties
     
     var name: String
@@ -21,7 +12,7 @@ class Meal: NSObject, NSCoding {
     // MARK: Archiving Paths
     
     static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("meals")
+    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("contatos")
     
     // MARK: Types
     
@@ -32,7 +23,7 @@ class Meal: NSObject, NSCoding {
         static let photoKey = "photo"
         static let ratingKey = "rating"
     }
-
+    
     // MARK: Initialization
     
     init?(name: String, email: String, telefone: String, photo: UIImage?, rating: Int) {
@@ -66,7 +57,7 @@ class Meal: NSObject, NSCoding {
         let email = aDecoder.decodeObjectForKey(PropertyKey.emailKey) as! String
         let telefone = aDecoder.decodeObjectForKey(PropertyKey.telefoneKey) as! String
         
-        // Because photo is an optional property of Meal, use conditional cast.
+        // Because photo is an optional property of Contato, use conditional cast.
         let photo = aDecoder.decodeObjectForKey(PropertyKey.photoKey) as? UIImage
         
         let rating = aDecoder.decodeIntegerForKey(PropertyKey.ratingKey)
@@ -74,5 +65,5 @@ class Meal: NSObject, NSCoding {
         // Must call designated initializer.
         self.init(name: name, email: email, telefone: telefone, photo: photo, rating: rating)
     }
-
+    
 }

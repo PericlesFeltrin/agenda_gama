@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		CA1292781B150DF500303C8D /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1292771B150DF500303C8D /* RatingControl.swift */; };
 		CA1902E01B10E523000271C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1902DF1B10E523000271C4 /* AppDelegate.swift */; };
-		CA1902E21B10E523000271C4 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1902E11B10E523000271C4 /* MealViewController.swift */; };
+		CA1902E21B10E523000271C4 /* ContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1902E11B10E523000271C4 /* ContatoViewController.swift */; };
 		CA1902E51B10E523000271C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1902E31B10E523000271C4 /* Main.storyboard */; };
 		CA1902EA1B10E523000271C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1902E81B10E523000271C4 /* LaunchScreen.storyboard */; };
-		CA5D06011B162F2300095F0F /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D06001B162F2300095F0F /* MealTableViewCell.swift */; };
-		CA5D06031B162F2300095F0F /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D06021B162F2300095F0F /* MealTableViewController.swift */; };
-		CA734E351B155077001A6F80 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA734E341B155077001A6F80 /* Meal.swift */; };
-		CA734E361B155077001A6F80 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA734E341B155077001A6F80 /* Meal.swift */; };
+		CA5D06011B162F2300095F0F /* ContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D06001B162F2300095F0F /* ContatoTableViewCell.swift */; };
+		CA5D06031B162F2300095F0F /* ContatoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D06021B162F2300095F0F /* ContatoTableViewController.swift */; };
+		CA734E351B155077001A6F80 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA734E341B155077001A6F80 /* Contato.swift */; };
+		CA734E361B155077001A6F80 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA734E341B155077001A6F80 /* Contato.swift */; };
 		CA96F92B1B1144F7000CC7F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA96F92A1B1144F7000CC7F8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -33,14 +33,14 @@
 		CA1292771B150DF500303C8D /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		CA1902DC1B10E523000271C4 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1902DF1B10E523000271C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA1902E11B10E523000271C4 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
+		CA1902E11B10E523000271C4 /* ContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoViewController.swift; sourceTree = "<group>"; };
 		CA1902E41B10E523000271C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA1902E91B10E523000271C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA1902EB1B10E523000271C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA1902F01B10E523000271C4 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA5D06001B162F2300095F0F /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
-		CA5D06021B162F2300095F0F /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
-		CA734E341B155077001A6F80 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		CA5D06001B162F2300095F0F /* ContatoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoTableViewCell.swift; sourceTree = "<group>"; };
+		CA5D06021B162F2300095F0F /* ContatoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoTableViewController.swift; sourceTree = "<group>"; };
+		CA734E341B155077001A6F80 /* Contato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		CA96F92A1B1144F7000CC7F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,12 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				CA1902DF1B10E523000271C4 /* AppDelegate.swift */,
-				CA1902E11B10E523000271C4 /* MealViewController.swift */,
+				CA1902E11B10E523000271C4 /* ContatoViewController.swift */,
 				CA1292771B150DF500303C8D /* RatingControl.swift */,
-				CA734E341B155077001A6F80 /* Meal.swift */,
+				CA734E341B155077001A6F80 /* Contato.swift */,
 				CA1902E31B10E523000271C4 /* Main.storyboard */,
-				CA5D06021B162F2300095F0F /* MealTableViewController.swift */,
-				CA5D06001B162F2300095F0F /* MealTableViewCell.swift */,
+				CA5D06021B162F2300095F0F /* ContatoTableViewController.swift */,
+				CA5D06001B162F2300095F0F /* ContatoTableViewCell.swift */,
 				CA96F92A1B1144F7000CC7F8 /* Assets.xcassets */,
 				CA1902E81B10E523000271C4 /* LaunchScreen.storyboard */,
 				CA1902EB1B10E523000271C4 /* Info.plist */,
@@ -196,12 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA734E351B155077001A6F80 /* Meal.swift in Sources */,
-				CA1902E21B10E523000271C4 /* MealViewController.swift in Sources */,
+				CA734E351B155077001A6F80 /* Contato.swift in Sources */,
+				CA1902E21B10E523000271C4 /* ContatoViewController.swift in Sources */,
 				CA1292781B150DF500303C8D /* RatingControl.swift in Sources */,
 				CA1902E01B10E523000271C4 /* AppDelegate.swift in Sources */,
-				CA5D06031B162F2300095F0F /* MealTableViewController.swift in Sources */,
-				CA5D06011B162F2300095F0F /* MealTableViewCell.swift in Sources */,
+				CA5D06031B162F2300095F0F /* ContatoTableViewController.swift in Sources */,
+				CA5D06011B162F2300095F0F /* ContatoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA734E361B155077001A6F80 /* Meal.swift in Sources */,
+				CA734E361B155077001A6F80 /* Contato.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,6 @@
-//
-//  MealViewController.swift
-//  FoodTracker
-//
-//  Created by Jane Appleseed on 5/23/15.
-//  Copyright © 2015 Apple Inc. All rights reserved.
-//  See LICENSE.txt for this sample’s licensing information.
-//
-
 import UIKit
 
-class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ContatoViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: Properties
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -20,29 +11,29 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     /*
-        This value is either passed by `MealTableViewController` in `prepareForSegue(_:sender:)`
-        or constructed as part of adding a new meal.
+    This value is either passed by `ContatoTableViewController` in `prepareForSegue(_:sender:)`
+    or constructed as part of adding a new contato.
     */
-    var meal: Meal?
-
+    var contato: Contato?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Handle the text field’s user input through delegate callbacks.
         nameTextField.delegate = self
         
-        // Set up views if editing an existing Meal.
-        if let meal = meal {
-            navigationItem.title = meal.name
-            nameTextField.text   = meal.name
-            emailTextField.text   = meal.email
-            telefoneTextField.text   = meal.telefone
-            photoImageView.image = meal.photo
-            ratingControl.rating = meal.rating
+        // Set up views if editing an existing Contato.
+        if let contato = contato {
+            navigationItem.title = contato.name
+            nameTextField.text   = contato.name
+            emailTextField.text   = contato.email
+            telefoneTextField.text   = contato.telefone
+            photoImageView.image = contato.photo
+            ratingControl.rating = contato.rating
         }
         
-        // Enable the Save button only if the text field has a valid Meal name.
-        checkValidMealName()
+        // Enable the Save button only if the text field has a valid Contato name.
+        checkValidContatoName()
     }
     
     // MARK: UITextFieldDelegate
@@ -54,16 +45,16 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        checkValidMealName()
+        checkValidContatoName()
         navigationItem.title = textField.text
     }
-
+    
     func textFieldDidBeginEditing(textField: UITextField) {
         // Disable the Save button while editing.
         saveButton.enabled = false
     }
     
-    func checkValidMealName() {
+    func checkValidContatoName() {
         // Disable the Save button if the text field is empty.
         let text = nameTextField.text ?? ""
         saveButton.enabled = !text.isEmpty
@@ -91,9 +82,9 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     @IBAction func cancel(sender: UIBarButtonItem) {
         // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
-        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        let isPresentingInAddContatoMode = presentingViewController is UINavigationController
         
-        if isPresentingInAddMealMode {
+        if isPresentingInAddContatoMode {
             dismissViewControllerAnimated(true, completion: nil)
         } else {
             navigationController!.popViewControllerAnimated(true)
@@ -109,8 +100,8 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
             let photo = photoImageView.image
             let rating = ratingControl.rating
             
-            // Set the meal to be passed to MealListTableViewController after the unwind segue.
-            meal = Meal(name: name, email: email, telefone: telefone, photo: photo, rating: rating)
+            // Set the contato to be passed to ContatoListTableViewController after the unwind segue.
+            contato = Contato(name: name, email: email, telefone: telefone, photo: photo, rating: rating)
         }
     }
     
@@ -131,6 +122,6 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         presentViewController(imagePickerController, animated: true, completion: nil)
     }
-
+    
 }
 
