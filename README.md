@@ -17,7 +17,7 @@ git clone https://github.com/PericlesFeltrin/agenda_gama.git
 #### Teste
 1. Abrir o projeto no Xcode
 2. Executar no simulador ou no iPhone
-3. Inserir, excluir e editar contatos.
+3. Inserir, excluir e editar contatos
 
 
 ### Demonstração
