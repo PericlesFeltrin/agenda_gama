@@ -20,6 +20,5 @@ git clone https://github.com/PericlesFeltrin/agenda_gama.git
 2. Executar no simulador ou no iPhone
 3. Inserir, excluir e editar contatos
 
-
 ### Demonstração
 Disponibilizamos uma breve demonstração do app no [YouTube](https://www.youtube.com/watch?v=Sjm9VQL5YVw).
