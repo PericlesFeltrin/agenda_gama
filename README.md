@@ -11,7 +11,7 @@ Desenvolver um aplicativo mobile em uma tarde com uma tecnologia (Android, IOS, 
 1. Necessário um Mac com Sistema OSX
 2. Instalação e download do [Xcode](https://developer.apple.com/xcode/)
 3. Clonar o projeto na sua máquina
-``` sh
+```sh
 git clone https://github.com/PericlesFeltrin/agenda_gama.git
 ```
 
