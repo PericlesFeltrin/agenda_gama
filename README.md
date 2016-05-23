@@ -14,6 +14,7 @@ Desenvolver um aplicativo mobile em uma tarde com uma tecnologia (Android, IOS, 
 ``` sh
 git clone https://github.com/PericlesFeltrin/agenda_gama.git
 ```
+
 #### Teste
 1. Abrir o projeto no Xcode
 2. Executar no simulador ou no iPhone
