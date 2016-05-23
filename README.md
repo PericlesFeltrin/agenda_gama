@@ -1,6 +1,6 @@
 # Agenda de Contatos Gama Academy - IOS
 
-##### Desafio proposto pela Gama Academy
+#### Desafio proposto pela Gama Academy
 Desenvolver um aplicativo mobile em uma tarde com uma tecnologia (Android, IOS, Angular.js ou React Native) que os membros da equipe não tinham conhecimento. Com o desafio proposto a escolha da equipe foi o desenvolvimento em IOS da Apple.
 
 #### Equipe
