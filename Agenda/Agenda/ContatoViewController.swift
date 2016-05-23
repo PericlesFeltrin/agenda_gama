@@ -10,6 +10,8 @@ class ContatoViewController: UIViewController, UITextFieldDelegate, UIImagePicke
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    
+    
     /*
     This value is either passed by `ContatoTableViewController` in `prepareForSegue(_:sender:)`
     or constructed as part of adding a new contato.
@@ -21,8 +23,12 @@ class ContatoViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         
         // Handle the text field’s user input through delegate callbacks.
         nameTextField.delegate = self
+        emailTextField.delegate = self
+        //telefoneTextField.delegate = self
         
-        // Set up views if editing an existing Contato.
+        
+        
+        // Set up views if editing an  Contato.
         if let contato = contato {
             navigationItem.title = contato.name
             nameTextField.text   = contato.name
@@ -46,18 +52,21 @@ class ContatoViewController: UIViewController, UITextFieldDelegate, UIImagePicke
     
     func textFieldDidEndEditing(textField: UITextField) {
         checkValidContatoName()
-        navigationItem.title = textField.text
+        //navigationItem.title = textField.text
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
         // Disable the Save button while editing.
-        saveButton.enabled = false
+        //saveButton.enabled = true
     }
     
     func checkValidContatoName() {
         // Disable the Save button if the text field is empty.
         let text = nameTextField.text ?? ""
-        saveButton.enabled = !text.isEmpty
+        if !text.isEmpty {
+            //saveButton.enabled = true
+            navigationItem.title = text
+        }
     }
     
     // MARK: UIImagePickerControllerDelegate

@@ -14,6 +14,7 @@ class ContatoTableViewController: UITableViewController {
         // Load any saved contatos, otherwise load sample data.
         if let savedContatos = loadContatos() {
             contatos += savedContatos
+            contatos.sortInPlace({ $0.name < $1.name})
         } else {
             // Load the sample data.
             loadContatos()
@@ -115,11 +116,13 @@ class ContatoTableViewController: UITableViewController {
                 tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: .None)
             } else {
                 // Add a new contato.
-                let newIndexPath = NSIndexPath(forRow: contatos.count, inSection: 0)
+                //let newIndexPath = NSIndexPath(forRow: contatos.count, inSection: 0)
                 contatos.append(contato)
-                tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+                //tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+                tableView.reloadData()
             }
             // Save the contatos.
+            contatos.sortInPlace({ $0.name < $1.name})
             saveContatos()
         }
     }
